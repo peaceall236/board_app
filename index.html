@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway|Source+Sans+Pro">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="header">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand">
+                            <div class="brand-logo">
+                                <ul id="logo1" class="list-inline">
+                                    <li>N</li>
+                                    <li>O</li>
+                                    <li>T</li>
+                                    <li>I</li>
+                                    <li>C</li>
+                                    <li>E</li>
+                                </ul>
+                                <ul id="logo2" class="list-inline">
+                                    <li>B</li>
+                                    <li>O</li>
+                                    <li>A</li>
+                                    <li>R</li>
+                                    <li>D</li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right" id="menuu">
+                          <li class="active" onclick="chage_menu(this)"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+                          <li onclick="chage_menu(this)"><a href="#usage_info">How-To-Use</a></li>
+                          <li onclick="chage_menu(this)"><a href="#feature">Features</a></li>
+                          <li onclick="chage_menu(this)"><a href="#contact">Contact Us</a></li>
+                          <li onclick="chage_menu(this)"><a href="https://aucaboard.000webhostapp.com/" target="_blank">Use App Online <span class="badge">!</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="row o_font" id="home">
+                <div class="col-xs-offset-1 col-xs-10 col-sm-4 col-md-4" style="height: 450px; overflow: hidden">
+                    <img src="responsive-design-symbol.svg" alt="image"/>
+                </div>
+                <div class="col-xs-10 col-sm-7 col-md-7">
+                    <img src="icon.png" width="100" alt="logo"/>
+                    <h1>Notice Board<br/>
+                        <small>Receive communique anytime, anywhere.</small>
+                    </h1>
+                    <a href="NoticeBoard_android.apk" download class="btn btn-primary btn-lg" style=""><img src="android-logo.png" height="25" width="25"/> Download for Android</a>
+                    <a href="NoticeBoard_Windows.appx" download class="btn btn-primary btn-lg"><img src="windows-logo-silhouette2.png" height="25" width="25"/> Download for Windows Phone</a>
+                </div>
+            </div>
+        
+            <div class="row o_font" id="usage_info">
+                <div class="col-xs-10 col-offset-xs-1">
+                    <div class="page-header">
+                        <h1>How-To-Use</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+             <!-- Carousel-->
+        <div id="myCarousel" class="carousel slide thu" data-ride="carousel" onload="slides_calc()">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="first-slide" src="image_home2.png" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Take A Tour.</h1>
+                  <p>Find all the communique at one place.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="second-slide" src="option_img.png" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>For more options.</h1>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="third-slide" src="notif_img.png" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Notifications</h1>
+                  <p>>Every 10 seconds the app checks for new communique. Click here to refresh and/or read the communique.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="fourth-slide" src="add_course_img.png" alt="Fourth slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Add Board</h1>
+                  <p>Personalize your app to get communique related to a certain course.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+                <img class="fifth-slide" src="report_img.png" alt="Fifth slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Error Report</h1>
+                  <p>In case you face a problem working with the app, don't hesitate to talk to us.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div><!-- /.carousel -->
+
+        <hr class="featurette-divider">
+        <div class="container-fluid">
+            <div class="row o_font" id="feature">
+                <div class="col-xs-10 col-offset-xs-1">
+                    <div class="page-header">
+                        <h1>Features</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row featurette o_font">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">Be Informed On Time. <span class="text-muted">As Soon As Possible.</span></h2>
+                  <p class="lead" >Don't be late for anything just because you were not informed or that there has been changes and you did not know. Know what is happening right on time. If there has been any change, know immediately before it is too late.</p>
+                </div>
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive center-block" src="stopwatch.svg" height="500" width="500" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette o_font">
+                <div class="col-md-7 col-md-push-5">
+                  <h2 class="featurette-heading">Get Reliable Information. <span class="text-muted">Right From The Officials.</span></h2>
+                  <p class="lead">How much do you trust information coming from your colleague? Don't depend on anyone to inform you of what is going on at your school. Check for yourself. Get information directly from the leaders themselves</p>
+                </div>
+                <div class="col-md-5 col-md-pull-7">
+                  <img class="featurette-image img-responsive center-block" src="quality.svg" height="500" width="500" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette o_font">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">Let Information Find You. <span class="text-muted">Save Time And Money.</span></h2>
+                  <p class="lead">No need to displace your yourself or call people to get information on your school anymore. Have access to all the information you need anytime, anywhere.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" src="svg-student-working-on-laptop-icon-1.svg" height="500" width="500" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            <div class="row o_font" id="contact">
+                <div class="col-xs-10 col-offset-xs-1">
+                    <div class="page-header">
+                        <h1>Leave A Message</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row o_font">
+                <div class="col-xs-12">
+                    <form name="myForm" id="myForm" action="error_report.php" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="user_name" class="col-sm-2 control-label">Your Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="Full Name" name="user_name" id="user_name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_mail" class="col-sm-2 control-label">E-Mail</label>
+                            <div class="col-sm-10">
+                                <input type="email" placeholder="example@gmail.com" name="user_mail" id="user_mail" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="issue" class="col-sm-2 control-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea placeholder="Write your message" name="issue" id="issue" class="form-control" row="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button class="btn btn-info btn-lg" type="submit" onclick="return sendErrorReport(this.form)"><span class="glyphicon glyphicon-send"></span> Send Message</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-offset-2 col-sm-6">
+                            <p class="alert alert-info" id="send_info"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12" id="footer">
+                    <div class="inset-text-effect">&copy; Copyright 2017 Notice Board</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
